@@ -96,6 +96,7 @@ class CombinedTargetMSELoss(nn.Module):
 @LOSSES.register_module()
 class JointsOHKMMSELoss(nn.Module):
     """MSE loss with online hard keypoint mining.
+    Paper ref: Cascaded Pyramid Network for Multi-Person Pose Estimation (CVPR 2018)
 
     Args:
         use_target_weight (bool): Option to use weighted MSE loss.
